@@ -9,19 +9,28 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400;1,500&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400;1,500&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
   <div class="container-all">
+    <div class="sidebar mobileSidebar">
+      <div class="navbar">
+        <button><i class="fa-solid fa-bars"></i></button>
+        <button class="active">Info</button>
+        <button>Direction</button>
+      </div>
+    </div>
     <div class="sidebar">
       <div class="navbar">
         <button><i class="fa-solid fa-bars"></i></button>
         <button class="active">Info</button>
         <button>Direction</button>
       </div>
-      <img src="./image/MNT00060.JPG" alt="">
+      <img class="potrait" src="./image/MNT00060.JPG" alt="">
       <div class="nameContainer">
         <h1>TRẦN TUẤN KIỆT</h1>
         <p>Backend Developer</p>
@@ -62,8 +71,10 @@
         </ul>
         <ul style="padding-bottom: 300px;">
           <p><b>Links and Credentials</b></p>
-          <li><i class="fa-brands fa-linkedin fa-lg"></i><a class="padding-10" href="https://www.linkedin.com/in/kiettrantuan3007/">LinkedIn</a></li>
-          <li><i class="fa-brands fa-github fa-lg"></i><a class="padding-10" href="https://github.com/kiettrantuan3007">Github</a></li>
+          <li><i class="fa-brands fa-linkedin fa-lg"></i><a class="padding-10"
+              href="https://www.linkedin.com/in/kiettrantuan3007/">LinkedIn</a></li>
+          <li><i class="fa-brands fa-github fa-lg"></i><a class="padding-10"
+              href="https://github.com/kiettrantuan3007">Github</a></li>
         </ul>
       </div>
 
@@ -76,7 +87,9 @@
         </div>
         <div class="contentDescription">
           <p>
-            I have a background in computer engineering and information technology, with a focus on backend and fullstack development. I am the type of person who seizes every opportunity to learn something new. That is why I enjoy challenges. From there, I'm under pressure to learn quickly and gain a lot of new experience.
+            I have a background in computer engineering and information technology, with a focus on backend and
+            fullstack development. I am the type of person who seizes every opportunity to learn something new. That is
+            why I enjoy challenges. From there, I'm under pressure to learn quickly and gain a lot of new experience.
           </p>
         </div>
       </div>
@@ -87,37 +100,82 @@
           <div class="littleLine"></div>
         </div>
         <div class="contentDescription">
-          <p>
-            I have a background in computer engineering and information technology, with a focus on backend and fullstack development. I am the type of person who seizes every opportunity to learn something new. That is why I enjoy challenges. From there, I'm under pressure to learn quickly and gain a lot of new experience.
-          </p>
+          <img src="./image/logo_hcmute.png" class="contentDescriptionLogo" alt="">
+          <div class="mainContent">
+            <h3 class="contentDescriptionTitle">Ho Chi Minh City University of Technology and Education</h3>
+            <p class="contentDescriptionSubtitle">Engineer of Computer Engineering | 2020 - Now</p>
+            <p>
+              I'm in my third year with a GPA of 3.29. In the learning process, I’ve done some project like Binary
+              Neuron Network, IOT with website controlling... I also got 4 scholarship from school and faculty, every
+              semester
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="contentFrame">
         <div class="contentTitle">
-          <h2>About</h2>
+          <h2>Self learning project</h2>
           <div class="littleLine"></div>
         </div>
         <div class="contentDescription">
-          <p>
-            I have a background in computer engineering and information technology, with a focus on backend and fullstack development. I am the type of person who seizes every opportunity to learn something new. That is why I enjoy challenges. From there, I'm under pressure to learn quickly and gain a lot of new experience.
-          </p>
+          <img src="./image/qrcode_heroku_camp.png" class="contentDescriptionLogo" alt="">
+          <div class="mainContent">
+            <h3 class="contentDescriptionTitle">YelpCamp</h3>
+            <p class="contentDescriptionSubtitle">FullStack web app | March 2023</p>
+            <p>
+              A website that list all the campgrounds all around the world, similar to Booking.com but more simple. I
+              created it after learning a course at Udemy.com
+              <br><b>Features:</b> Login/register user, post/delete comment, post/edit/delete/view the campgrounds by
+              using the
+              RESTful API with the NodeJS is the back-end. Data was stored at MongoDB Atlas and uploaded images was
+              stored at Cloudinary.
+              <br>Link to website: <a
+                href="https://project-camp-ktt.herokuapp.com/">https://project-camp-ktt.herokuapp.com/</a>
+              <br>Or scan this QR Code at left-hand side
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="contentFrame">
         <div class="contentTitle">
-          <h2>About</h2>
+          <h2>Job experience</h2>
           <div class="littleLine"></div>
         </div>
         <div class="contentDescription">
-          <p>
-            I have a background in computer engineering and information technology, with a focus on backend and fullstack development. I am the type of person who seizes every opportunity to learn something new. That is why I enjoy challenges. From there, I'm under pressure to learn quickly and gain a lot of new experience.
-          </p>
+          <img src="./image/image_job_tgdd.png" class="contentDescriptionLogo" alt="">
+          <div class="mainContent">
+            <h3 class="contentDescriptionTitle">Content writer at Thegioididong.com</h3>
+            <p class="contentDescriptionSubtitle">Shoping Advice - Collaborator | Jan 2022 - July 2022</p>
+            <p>
+              Write daily buying advice on electronics, especially phones, smartwatches, laptops. For the time being,
+              I've also learned the SEO in a website, how to write attractive but still in accordance with SEO
+              standards.
+            </p>
+          </div>
         </div>
       </div>
 
-
+      <div class="contentFrame">
+        <div class="contentTitle">
+          <h2>Online course</h2>
+          <div class="littleLine"></div>
+        </div>
+        <div class="contentDescription">
+          <img src="./image/image_learn_udemy.png" class="contentDescriptionLogo" alt="">
+          <div class="mainContent">
+            <h3 class="contentDescriptionTitle">The Web Developer Bootcamp 2023</h3>
+            <p class="contentDescriptionSubtitle">Fullstack Web Developer | Udemy.com | Jan 2023</p>
+            <p>The course teaches the basics of both frontend and backend. Learn HTML, CSS, Bootstrap, JavaScript,
+              NodeJS;
+              build backend with ExpressJS, MongoDB, upload images, geocoding, login user,...
+              <br>Link certificate: <a
+                href="https://www.udemy.com/certificate/UC-14185af4-5a19-418b-808a-e6009047be6b/"> Click here </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
