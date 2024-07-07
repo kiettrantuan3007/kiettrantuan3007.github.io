@@ -22,17 +22,22 @@ input[type="reset"] {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-
+    height: max-content;
 }
 
 body {
+    display: flex;
+    justify-content: center;
     width: screen;
+    z-index: 1;
     height: max-content;
 }
 
 .container-all {
+    max-width: 1600px;
     display: flex;
     flex-direction: row;
+    z-index: 1;
 }
 
 .sidebar {
@@ -122,7 +127,7 @@ a {
 }
 
 .sidebar .ulContainer li {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .my_personal_account_link{
@@ -179,28 +184,34 @@ a {
 
 .content {
     flex: 5;
+    z-index: 1;
 }
 
 .greyContent {
     font-style: italic;
     color: var(--lightGrey);
+    z-index: 1;
 }
 
 .padding-10 {
     padding: 10px;
+    z-index: 1;
 }
 
 .contentFrame {
     padding: 60px 60px 0 60px;
+    z-index: 1;
 }
 
 .contentFrame:last-child {
     padding: 60px;
+    z-index: 1;
 }
 
 .contentTitle {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 30px;
+    z-index: 1;
 }
 
 .littleLine {
@@ -208,47 +219,93 @@ a {
     width: 80px;
     background-color: var(--mainDark);
     border-radius: 2px;
+    z-index: 1;
 }
 
 .contentDescription {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .contentDescription p {
     color: var(--mainGrey);
     margin: 20px 0;
+    z-index: 1;
 }
 
 p.contentDescriptionSubtitle {
     color: var(--mainDark);
+    z-index: 1;
 }
 
 .contentDescription img {
     width: 20%;
     height: fit-content;
+    z-index: 1;
 }
 
 .mainContent {
+    position: relative;
     width: 70%;
+    z-index: 1;
+}
+#job_synopsys {
+    padding: 0 0 0 20px;
+    border-left: 1px solid var(--mainGrey);
+    z-index: 1;
+}
+#job_synopsys::before{
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 1;
 }
 
 h3 {
-    font-size: 1.6em;
+    font-size: 1.6rem;
+    z-index: 1;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    z-index: 1;
 }
 
 @media screen and (max-width: 920px) {
+    .sidebar .navbar{
+        /* position: absolute; */
+        left: 30px;
+        width: 95vw;
+        position: fixed;
+        z-index: 9999;
+        background-color: white;
+    }
+    .content {
+        margin-top: 30px;
+    }
+    .sidebar .navbar button {
+        color: black;
+        z-index: 9999;
+        background-color: white;
+    }
+    .sidebar .navbar button i{
+        color: black;
+        z-index: 9999;
+    }
     .sidebar {
         display: none;
-        position: fixed;
+        position: absolute;
         width: 80%;
     }
-
     .sidebar.mobileSidebar {
 
         display: flex;
@@ -259,7 +316,7 @@ p {
         height: 100%;
     }
 
-    .sidebar.mobileSidebar .navbar {
+    /* .sidebar.mobileSidebar .navbar {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -269,9 +326,19 @@ p {
     .sidebar.mobileSidebar .navbar button {
         transform: rotate(-90deg);
         z-index: 5;
-    }
+    } */
     .my_personal_account_link div{
         display:block;
         justify-content:start;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    .contentFrame {
+        padding: 60px 20px 0 40px;
     }
 }
