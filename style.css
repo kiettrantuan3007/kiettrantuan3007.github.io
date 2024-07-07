@@ -102,6 +102,9 @@ body {
 }
 
 .sidebar .ulContainer {
+    border-top: 5px solid white;
+    border-radius: 15px 15px 0 0 ;
+    margin: 15px 0 0 0;
     padding: 0 20px 0 60px;
     text-align: left;
     color: white;
@@ -114,12 +117,64 @@ body {
     margin-bottom: 10px;
 }
 
-.sidebar .ulContainer a {
+a {
     color: var(--mainWhite);
 }
 
 .sidebar .ulContainer li {
     font-size: 1.2em;
+}
+
+.my_personal_account_link{
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    color: black;
+}
+.my_personal_account_link div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.my_personal_account_link div li {
+    border: 1px solid var(--mainWhite);
+    /* background-color: var(--mainWhite); */
+    width: 150px;
+    max-width: 300px;
+    border-radius: 15px;
+    /* height: 45px; */
+    /* width: 40%; */
+    color: var(--mainWhite);
+    margin: 15px 0 15px 0;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+
+}
+
+.my_personal_account_link div li a.padding-10{
+    width: 100%;
+    color: inherit;
+    padding: 20px;
+    /* color: var(--mainWhite); */
+    /* padding: 30px; */
+}
+.my_personal_account_link .my_personal_account_link_li:hover {
+    transition: 0.2s ease-in-out;
+    background-color: var(--mainWhite);
+    color: var(--mainBlack);
+}
+
+
+.li_header {
+    /* height: 50px; */
+    color: var(--mainBlack);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), var(--lightGrey));
+    padding: 0 0 0 40px;
+    margin: 20px 0 20px -40px;
+    border-radius: 10px;
+    border-bottom: 1px solid var(--mainBlack);
 }
 
 .content {
@@ -214,5 +269,9 @@ p {
     .sidebar.mobileSidebar .navbar button {
         transform: rotate(-90deg);
         z-index: 5;
+    }
+    .my_personal_account_link div{
+        display:block;
+        justify-content:start;
     }
 }
