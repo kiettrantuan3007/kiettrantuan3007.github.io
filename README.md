@@ -2,6 +2,8 @@
 
 Enter the link: https://kiettrantuan3007.github.io/ to see my CV
 
-# Page are in developing process
+# Link to my social network
 
-I am so sorry about this. I will complete the site ASAP
+Youtube: [https://www.youtube.com/@meovatcorelvawindows](https://www.youtube.com/@meovatcorelvawindows)
+
+LinkedIn: [https://www.linkedin.com/in/kiettrantuan3007/](https://www.linkedin.com/in/kiettrantuan3007/)
